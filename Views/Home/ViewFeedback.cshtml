@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Practical7.Models.Feedback>
+
+@{
+    ViewBag.Title = "View Feedback";
+    int index = 0;
+}
+
+<h2>Student Feedback List</h2>
+
+<table class="feedback-table">
+    <tr>
+        <th>Enrollment</th>
+        <th>Student</th>
+        <th>Subject</th>
+        <th>Rating</th>
+        <th>Comment</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var feedback in Model)
+    {
+        <tr>
+            <td>@feedback.EnrollmentNumber</td>
+            <td>@feedback.StudentName</td>
+            <td>@feedback.Subject</td>
+            <td>@feedback.Rating</td>
+            <td>@feedback.Comment</td>
+            <td>
+                @using (Html.BeginForm("DeleteFeedback", "Home", new { index = index }, FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <button type="submit" onclick="return confirm('Are you sure you want to delete this feedback?');">Delete</button>
+                }
+            </td>
+        </tr>
+        index++;
+    }
+</table>
+
+<br />
+
+@Html.ActionLink("Give Another Feedback", "GiveFeedback", "Home")
+<br />
+@Html.ActionLink("Back to Home", "Index", "Home")

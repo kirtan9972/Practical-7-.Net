@@ -1,0 +1,151 @@
+﻿```css
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+    .header h1 {
+        margin: 0;
+        font-size: 30px;
+    }
+
+.header-subtitle {
+    margin: 8px 0 0;
+    font-size: 16px;
+}
+
+/* Main container */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 35px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Headings */
+h2 {
+    color: #243b55;
+    margin-bottom: 25px;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #243b55;
+    color: white;
+    padding: 10px 18px;
+    margin: 8px 5px 8px 0;
+    border-radius: 5px;
+}
+
+    a:hover {
+        background-color: #141e30;
+    }
+
+/* Form */
+.feedback-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+textarea.form-control {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #243b55;
+    color: white;
+    border: none;
+    padding: 11px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+    .submit-btn:hover {
+        background-color: #141e30;
+    }
+
+/* Table */
+.feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .feedback-table th {
+        background-color: #243b55;
+        color: white;
+        padding: 12px;
+        text-align: left;
+    }
+
+    .feedback-table td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .feedback-table tr:nth-child(even) {
+        background-color: #f7f7f7;
+    }
+
+    .feedback-table tr:hover {
+        background-color: #eef2f7;
+    }
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #243b55;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+    footer p {
+        margin: 0;
+    }
+
+/* Validation */
+.field-validation-error {
+    color: red;
+    font-size: 13px;
+}
+
+```
